@@ -7,7 +7,6 @@ import storeAuth from '@/components/authentication/store';
 import storeLoading from '@/modules/loading/store';
 import storeLang from '@/modules/lang/store';
 import storeAside from '@/components/aside/store';
-import storePosts from '@/modules/post/store';
 import storeAccounts from '@/modules/account/store';
 
 Vue.use(Vuex);
@@ -18,7 +17,6 @@ export default new Vuex.Store({
         storeLoading,
         storeLang,
         storeAside,
-        storePosts,
         storeAccounts
     },
     plugins: [createPersistedState({
