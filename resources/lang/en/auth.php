@@ -15,5 +15,6 @@ return [
 
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+    'send_forgot_password_successfully' => 'Sent email for Forgot Password successfully!',
+    'email_not_found' => 'Email not found!',
 ];

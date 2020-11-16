@@ -11,8 +11,16 @@
 |
 */
 
-Route::get('/get-doc-api', 'HomeController@getDocAPI');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
-Route::any('{all}', function () {
-    return view('admin.index');
-})->where(['all' => '.*']);
+Route::group(['domain' => env('DOMAIN')], function () {
+    Route::get('/api-mobile', 'HomeController@getDocAPI');
+});
+
+Route::group([
+    'domain' => env('SUB_DOMAIN')], function () {
+        Route::get('/api-cms', 'HomeController@getDocAPICms');
+        Route::any('{all}', function () {
+            return view('admin.index');
+        })->where(['all' => '.*']);
+    });

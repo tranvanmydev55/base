@@ -1,12 +1,15 @@
 <?php
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class HomeController extends Controller
 {
     public function getDocAPI()
     {
-        return view('swagger');
+        return view('swagger.mobile');
+    }
+
+    public function getDocAPICms()
+    {
+        return view('swagger.cms');
     }
 }

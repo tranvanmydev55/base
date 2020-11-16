@@ -2,10 +2,13 @@
 
 namespace App\Http\Requests;
 
+use App\Http\Traits\FailedValidation;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SignupRequest extends FormRequest
 {
+    use FailedValidation;
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -26,7 +29,19 @@ class SignupRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
-            'password' => 'required|string|confirmed'
+            'interested_in' => 'array',
+            'password' => [
+                'required',
+                'string',
+                'confirmed',
+                'min:6',
+                'max:30'
+            ],
+            'password_confirmation' => 'required',
+            'gender' => 'required|integer|min:0|max:2',
+            'birthday' => 'nullable|date_format:Y-m-d|before:now',
+            'phone' => ['required'],
+            'country_code' => ['required', 'max:7'],
         ];
     }
 }

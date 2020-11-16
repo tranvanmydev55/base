@@ -3,7 +3,6 @@
 namespace App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Repositories\BaseRepositoryInterface;
 
 /**
  * Class BaseRepository
@@ -73,6 +72,16 @@ class BaseRepository implements BaseRepositoryInterface
     public function findById(int $id)
     {
         return $this->model->where('id', $id)->first();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function findOrFailWithRelation(int $id, string $relation, string $condition, string $value)
+    {
+        return $this->model->with([$relation => function ($q) use ($condition, $value) {
+            $q->orderBy($condition, $value);
+        }])->find($id);
     }
 
     /**
@@ -162,5 +171,30 @@ class BaseRepository implements BaseRepositoryInterface
     public function destroy($id)
     {
         return $this->model->destroy($id);
+    }
+
+    /**
+     * Update point model.
+     *
+     * @param [model] $model
+     * @param [integer] $point
+     */
+    public function updatePoint($model, $point)
+    {
+        $point += $model->point;
+        if ($point <= 0) {
+            $point = 0;
+        }
+        $model->update(['point' => $point]);
+    }
+
+    /**
+     * @param $slug
+     *
+     * @return builder
+     */
+    public function findBySlug($slug)
+    {
+        return $this->model->whereSlug($slug);
     }
 }

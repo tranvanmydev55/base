@@ -79,6 +79,18 @@ interface BaseRepositoryInterface
     public function findOrFail(int $id);
 
     /**
+     * Find a model by its primary key
+     *
+     * @param  int  $id
+     * @param string relation
+     * @param string condition
+     * @param string value
+     *
+     * @return Model
+     */
+    public function findOrFailWithRelation(int $id, string $relation, string $condition, string $value);
+
+    /**
      * Find a specific first record that match a given conditions for its Value
      *
      * @param  string  $condition
@@ -167,4 +179,12 @@ interface BaseRepositoryInterface
      * @throws Exception
      */
     public function destroy($id);
+
+    /**
+     * Update point model.
+     *
+     * @param [model] $model
+     * @param [integer] $point
+     */
+    public function updatePoint($model, $point);
 }

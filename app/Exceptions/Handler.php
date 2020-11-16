@@ -3,6 +3,9 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Http\Response;
+use Illuminate\Http\Exceptions\PostTooLargeException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -29,7 +32,7 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * @param  \Exception  $exception
+     * @param  \Exception $exception
      * @return void
      *
      * @throws \Exception
@@ -42,14 +45,28 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $exception
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Exception $exception
      * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \Exception
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof ModelNotFoundException) {
+            return response()->json([
+                "status" => Response::HTTP_NOT_FOUND,
+                "message" => "Not found!"
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        if ($exception instanceof PostTooLargeException) {
+            return response()->json([
+                "status" => Response::HTTP_REQUEST_ENTITY_TOO_LARGE,
+                "message" => "File too large!"
+            ], Response::HTTP_REQUEST_ENTITY_TOO_LARGE);
+        }
+
         return parent::render($request, $exception);
     }
 }

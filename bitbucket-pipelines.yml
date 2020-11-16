@@ -16,3 +16,10 @@ pipelines:
           - npm install
           - npm run eslint
           - npm run psr2
+  # branches:
+  #   develop:
+  #     - step:
+  #         name: Deploy to development environment
+  #         deployment: test
+  #         script:
+  #           - dep deploy development --vv
