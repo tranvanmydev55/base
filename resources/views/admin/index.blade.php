@@ -6,6 +6,9 @@
         <title>CMS | {{ env('APP_ENV')  }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/duck.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/duck.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/duck.png" />
         <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">

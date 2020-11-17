@@ -1,4 +1,4 @@
-# The comuni Project
+# The My-Tsuru Project
 
 ## Requirements
 
@@ -47,9 +47,9 @@ Set these environment variables (see .env file).
 
 ```BASH
 DB_CONNECTION=mysql
-DB_HOST=comuni_mysql
+DB_HOST=tsuru_mysql
 DB_PORT=3306
-DB_DATABASE=comuni
+DB_DATABASE=tsuru
 DB_USERNAME=root
 DB_PASSWORD=root
 
@@ -63,9 +63,7 @@ MAIL_USERNAME=example@gmail.com
 MAIL_PASSWORD=*****
 MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=example@gmail.com
-MAIL_FROM_NAME=comuni
-
-SRC_FFMPEG="/snap/bin/ffmpeg"
+MAIL_FROM_NAME=tsuru
 ```
 
 ### Installation
@@ -73,7 +71,7 @@ SRC_FFMPEG="/snap/bin/ffmpeg"
 - Go into the `workspace` container
 
 ```BASH
-docker exec -it comuni_workspace bash
+docker exec -it tsuru_workspace bash
 ```
 - Install package PHP
 
@@ -108,7 +106,7 @@ yarn run dev
 php artisan migrate --seed
 
 # Or running outside the docker container
-docker exec -it comuni_workspace php artisan migrate --seed
+docker exec -it tsuru_workspace php artisan migrate --seed
 ```
 
 - Generate new Internal Password Grant OAuth2 clients.
@@ -121,12 +119,12 @@ php artisan passport:install
 - Site will publish on 127.0.0.1:{`ports`} (`ports` config in docker-compose.yml > services > nginx > ports). Add domain to host file so we can access site by domain:{`ports`} (edit host in file ./ect/hosts)
 
 ```
-127.0.0.1 comuni.local
+127.0.0.1 tsuru.local
 ```
 - Asset project with domain
 
 ```
-comuni.local:2025 or localhost:2025 or 127.0.0.1:2025
+tsuru.local:2025 or localhost:2025 or 127.0.0.1:2025
 ```
 
 - If you want run project on your local instead of Docker, just skip all step about docker and create virtual host. And modify `.env` config of `DB_HOST`, `DB_HOST_TEST` to `127.0.0.1`
@@ -166,20 +164,10 @@ yarn run watch:eslint
 Run check phpcs coding venventions with rule PSR2
 
 ```bash
-docker exec -it comuni_workspace phpcs --standard=PSR2 app routes config
+docker exec -it tsuru_workspace phpcs --standard=PSR2 app routes config
 ```
-or exec to container `comuni_workspace` and run code
+or exec to container `tsuru_workspace` and run code
 
 ```bash
 npm run psr2
-```
-## Run Schedule
-
-+ Config crontab publishing the draft posts:
-```
-crontab -e
-``` 
-
-```
-* * * * * cd /path-to-project && php artisan public:post >> /dev/null 2>&1
 ```

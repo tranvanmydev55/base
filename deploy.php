@@ -4,10 +4,10 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'cms-comuni');
+set('application', 'tsuru');
 
 // Project repository
-set('repository', 'git@bitbucket.org:vmodev/unic-cms.git');
+set('repository', 'git@bitbucket.org:tsuru-vmojp/backend.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', false);

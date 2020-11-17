@@ -44,28 +44,6 @@ export default [{
                 import ('@/modules/account/views/Profile.vue'),
         },
         ],
-    }, {
-        path: 'posts',
-        name: 'Posts',
-        redirect: 'posts',
-        meta: { title: 'Posts', requiresAuth: true, accessedBy: ['admin'] },
-        component: {
-            render(c) {
-                return c('router-view');
-            },
-        },
-        children: [{
-            path: '',
-            component: () =>
-                import ('@/modules/post/views/PostList.vue'),
-        },
-        {
-            path: 'detail/:slug',
-            name: 'Detail',
-            component: () =>
-                import ('@/modules/post/views/PostDetail.vue'),
-        },
-        ],
     },
     {
         path: '*',
