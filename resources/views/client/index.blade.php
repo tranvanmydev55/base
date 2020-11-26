@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>My-Tsuru</title>
+    <base href="/" />
     <meta name="description" content="Around - Multipurpose Bootstrap Template" />
     <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative"
     />
