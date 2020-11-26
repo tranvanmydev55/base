@@ -752,6 +752,103 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Header',
+
+  /**
+   * Created with component
+   */
+  created: function created() {
+    /**
+     * Do something
+     */
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/client/js/components/Inner.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/client/js/components/Inner.vue?vue&type=script&lang=js& ***!
@@ -1436,7 +1533,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! &/components/Header */ "./resources/assets/client/js/components/Header.vue");
+/* harmony import */ var _components_Header1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! &/components/Header1 */ "./resources/assets/client/js/components/Header1.vue");
 /* harmony import */ var _components_Footer2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! &/components/Footer2 */ "./resources/assets/client/js/components/Footer2.vue");
 //
 //
@@ -1453,7 +1550,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Subpage',
   components: {
-    Header1: _components_Header__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Header1: _components_Header1__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer2: _components_Footer2__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
 
@@ -10226,6 +10323,504 @@ var staticRenderFns = [
                             attrs: { href: "contacts-v3.html" }
                           },
                           [_vm._v("Contacts-v3")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "header",
+      {
+        staticClass:
+          "cs-header navbar navbar-expand-lg navbar-light navbar-floating navbar-sticky",
+        attrs: { "data-scroll-header": "" }
+      },
+      [
+        _c("div", { staticClass: "container px-0 px-xl-3" }, [
+          _c(
+            "button",
+            {
+              staticClass: "navbar-toggler ml-n2 mr-2",
+              attrs: {
+                type: "button",
+                "data-toggle": "offcanvas",
+                "data-offcanvas-id": "primaryMenu"
+              }
+            },
+            [_c("span", { staticClass: "navbar-toggler-icon" })]
+          ),
+          _c(
+            "a",
+            {
+              staticClass:
+                "navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4",
+              attrs: { href: "https://demo.createx.studio/around/index.html" }
+            },
+            [
+              _c("img", {
+                staticClass: "d-none d-lg-block",
+                attrs: {
+                  width: "153",
+                  src: "img/logo/logo-dark.png",
+                  alt: "Around"
+                }
+              }),
+              _c("img", {
+                staticClass: "d-lg-none",
+                attrs: {
+                  width: "58",
+                  src: "img/logo/logo-icon.png",
+                  alt: "Around"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "d-flex align-items-center order-lg-3 ml-lg-auto"
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "cs-offcanvas-collapse order-lg-2",
+              attrs: { id: "primaryMenu" }
+            },
+            [
+              _c("div", { staticClass: "cs-offcanvas-cap navbar-box-shadow" }, [
+                _c("h5", { staticClass: "mt-1 mb-0" }, [_vm._v("Menu")]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close lead",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "offcanvas",
+                      "data-offcanvas-id": "primaryMenu"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "cs-offcanvas-body" }, [
+                _c("ul", { staticClass: "navbar-nav" }, [
+                  _c("li", { staticClass: "nav-item dropdown dropdown-mega" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link dropdown-toggle",
+                        attrs: {
+                          href: "portfolio-single-carousel.html#",
+                          "data-toggle": "dropdown"
+                        }
+                      },
+                      [_vm._v("Demos")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown-menu" }, [
+                      _c("a", {
+                        staticClass:
+                          "dropdown-column dropdown-column-img bg-secondary",
+                        staticStyle: {
+                          "background-image": "url(img/demo/menu-banner.jpg)"
+                        },
+                        attrs: {
+                          href: "https://demo.createx.studio/around/index.html"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown-column" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/index.html"
+                            }
+                          },
+                          [_vm._v("Web Template Presentation")]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-business-consulting.html"
+                            }
+                          },
+                          [_vm._v("Business Consulting")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-shop-homepage.html"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Shop Homepage\n                                "
+                            )
+                          ]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-booking-directory.html"
+                            }
+                          },
+                          [_vm._v("Booking / Directory")]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-creative-agency.html"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Creative\n                                    Agency"
+                            )
+                          ]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-web-studio.html"
+                            }
+                          },
+                          [_vm._v("Web Studio")]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-product-software.html"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Product\n                                    Landing - Software"
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown-column" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-product-gadget.html"
+                            }
+                          },
+                          [_vm._v("Product Landing - Gadget")]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-mobile-app.html"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Mobile App\n                                    Showcase"
+                            )
+                          ]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-coworking-space.html"
+                            }
+                          },
+                          [_vm._v("Coworking Space")]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-event-landing.html"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "Event\n                                    Landing"
+                            )
+                          ]
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/demo-marketing-seo.html"
+                            }
+                          },
+                          [_vm._v("Digital Marketing & SEO")]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item dropdown" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link dropdown-toggle",
+                        attrs: {
+                          href: "portfolio-single-carousel.html#",
+                          "data-toggle": "dropdown"
+                        }
+                      },
+                      [_vm._v("Docs / UI Kit")]
+                    ),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "dropdown-menu" }, [
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/docs/dev-setup.html"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-items-center" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "font-size-xl text-muted" },
+                                  [_c("i", { staticClass: "fe-file-text" })]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "pl-3" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "d-block text-heading" },
+                                    [_vm._v("Documentation")]
+                                  ),
+                                  _c(
+                                    "small",
+                                    { staticClass: "d-block text-muted" },
+                                    [_vm._v("Kick-start customization")]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/components/typography.html"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-items-center" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "font-size-xl text-muted" },
+                                  [_c("i", { staticClass: "fe-layers" })]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "pl-3" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "d-block text-heading" },
+                                    [
+                                      _vm._v("UI Kit"),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass: "badge badge-danger ml-2"
+                                        },
+                                        [_vm._v("50+")]
+                                      )
+                                    ]
+                                  ),
+                                  _c(
+                                    "small",
+                                    { staticClass: "d-block text-muted" },
+                                    [_vm._v("Flexible components")]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: {
+                              href:
+                                "https://demo.createx.studio/around/docs/changelog.html"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-items-center" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "font-size-xl text-muted" },
+                                  [_c("i", { staticClass: "fe-edit" })]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "pl-3" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "d-block text-heading" },
+                                    [
+                                      _vm._v("Changelog"),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticClass:
+                                            "badge badge-success ml-2"
+                                        },
+                                        [_vm._v("v1.1.1")]
+                                      )
+                                    ]
+                                  ),
+                                  _c(
+                                    "small",
+                                    { staticClass: "d-block text-muted" },
+                                    [_vm._v("Regular updates")]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { href: "mailto:support" }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "d-flex align-items-center" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "font-size-xl text-muted" },
+                                  [_c("i", { staticClass: "fe-life-buoy" })]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "pl-3" }, [
+                                  _c(
+                                    "span",
+                                    { staticClass: "d-block text-heading" },
+                                    [_vm._v("Support")]
+                                  ),
+                                  _c(
+                                    "small",
+                                    { staticClass: "d-block text-muted" },
+                                    [_vm._v("support@createx.studio")]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
                         )
                       ])
                     ])
@@ -29240,6 +29835,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_18ac6570___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_template_id_18ac6570___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/assets/client/js/components/Header1.vue":
+/*!***********************************************************!*\
+  !*** ./resources/assets/client/js/components/Header1.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header1.vue?vue&type=template&id=062c4b1e& */ "./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e&");
+/* harmony import */ var _Header1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header1.vue?vue&type=script&lang=js& */ "./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Header1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/assets/client/js/components/Header1.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Header1.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/client/js/components/Header1.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e&":
+/*!******************************************************************************************!*\
+  !*** ./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Header1.vue?vue&type=template&id=062c4b1e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/assets/client/js/components/Header1.vue?vue&type=template&id=062c4b1e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Header1_vue_vue_type_template_id_062c4b1e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
