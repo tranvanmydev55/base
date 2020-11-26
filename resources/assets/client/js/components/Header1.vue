@@ -1,7 +1,13 @@
 <template>
 <header class="cs-header navbar navbar-expand-lg navbar-light navbar-floating navbar-sticky" data-scroll-header>
     <div class="container px-0 px-xl-3">
-        <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="https://demo.createx.studio/around/index.html"><img class="d-none d-lg-block" width="153" src="img/logo/logo-dark.png" alt="Around" /><img class="d-lg-none" width="58" src="img/logo/logo-icon.png" alt="Around" /></a>
+        <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="/">
+            <img class="d-none d-lg-block" width="153" src="img/logo/logo-dark.png" alt="Around" />
+            <img class="d-lg-none" width="58" src="img/logo/logo-icon.png" alt="Around" />
+        </a>
         <div class="d-flex align-items-center order-lg-3 ml-lg-auto">
             </div>
         <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
@@ -73,7 +79,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Header1',
     /**
      * Created with component
      */

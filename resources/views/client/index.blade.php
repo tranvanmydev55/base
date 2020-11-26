@@ -34,12 +34,10 @@
             visibility: hidden;
             z-index: 9999;
         }
-        
         .cs-page-loading.active {
             opacity: 1;
             visibility: visible;
         }
-        
         .cs-page-loading-inner {
             position: absolute;
             top: 50%;
@@ -52,7 +50,6 @@
             transition: opacity 0.2s ease-in-out;
             opacity: 0;
         }
-        
         .cs-page-loading.active>.cs-page-loading-inner {
             opacity: 1;
         }
@@ -92,6 +89,18 @@
             }
         }
     </style>
+      <script>
+        (function () {
+          window.onload = function () {
+            var preloader = document.querySelector('.cs-page-loading');
+            preloader.classList.remove('active');
+            setTimeout(function () {
+              preloader.remove();
+            }, 2000);
+          };
+        })();
+    
+      </script>
     <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
     <script>
@@ -112,9 +121,27 @@
 </head>
 
 <body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5fbfb925a1d54c18d8edb39f/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <div class="cs-page-loading active">
+        <div class="cs-page-loading-inner">
+          <div class="cs-page-spinner"></div><span>Loading...</span>
+        </div>
+    </div>
     <div id="app-client"></div>
     <script src="{{ mix('client/js/app.js') }}"></script>
-    <!-- Vendor scrits: js libraries and plugins-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -122,7 +149,6 @@
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="vendor/parallax-js/dist/parallax.min.js"></script>
-    <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
 </body>
 
