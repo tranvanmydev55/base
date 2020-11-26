@@ -2,7 +2,7 @@
 <div class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <b>CMS</b>comuni
+            <b>CMS</b>MyTsuru
         </div>
         <div class="card">
             <div class="card-body login-card-body">
