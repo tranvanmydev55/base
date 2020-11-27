@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header1 from '&/components/Header';
+import Header1 from '&/components/Header1';
 import Footer2 from '&/components/Footer2';
 
 export default {
