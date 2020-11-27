@@ -6,9 +6,9 @@
         "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch-poll": "npm run watch -- --watch-poll",
         "psr2": "phpcs --report=diff --standard=PSR2  app routes config",
-        "eslint": "eslint 'resources/assets/admin/js/**/*.{js,vue}'",
-        "eslint:fix": "eslint 'resources/assets/admin/js/**/*.{js,vue}' --fix",
-        "eslint:watch": "chokidar 'resources/assets/admin/js/**/*.js' 'resources/assets/admin/js/**/*.vue' -c 'npm run eslint:fix'",
+        "eslint": "eslint 'resources/assets/**/*.{js,vue}'",
+        "eslint:fix": "eslint 'resources/assets/**/*.{js,vue}' --fix",
+        "eslint:watch": "chokidar 'resources/assets/**/*.js' 'resources/assets/**/*.vue' -c 'npm run eslint:fix'",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"

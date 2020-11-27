@@ -1,4 +1,3 @@
-import App from '&/App.vue';
 import Landing from '&/components/Landing.vue';
 import Subpage from '&/components/Subpage.vue';
 
