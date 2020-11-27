@@ -16,10 +16,11 @@ pipelines:
           - npm install
           - npm run eslint
           - npm run psr2
-  # branches:
-  #   develop:
-  #     - step:
-  #         name: Deploy to development environment
-  #         deployment: test
-  #         script:
-  #           - dep deploy development --vv
+  branches:
+    develop:
+      - step:
+          name: Deploy to Production Environment
+          image: framgiaciteam/deb-deploy:7.3
+          deployment: Production
+          script:
+            - dep deploy production -vvv

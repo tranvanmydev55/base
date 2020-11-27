@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'tsuru');
+set('application', 'backend-tsure');
 
 // Project repository
 set('repository', 'git@bitbucket.org:tsuru-vmojp/backend.git');
@@ -19,7 +19,7 @@ set('keep_releases', 1);
 set('branch', 'develop');
 
 // Setup stage default
-set('default_stage', 'development');
+set('default_stage', 'production');
 
 // Shared files/dirs between deploys
 add('shared_files', [
@@ -45,10 +45,10 @@ add('writable_dirs', [
 ]);
 
 // Hosts
-
-host('13.59.87.195')
+// Production
+host('3.138.169.151')
     ->user('deploy')
-    ->stage('development')
+    ->stage('production')
     ->set('deploy_path', '~/{{application}}')
     ->forwardAgent(false);
 
@@ -109,18 +109,22 @@ after('deploy:failed', 'deploy:unlock');
 before('deploy:symlink', 'clear-config');
 
 // Reload PHP-FPM
-// task('reload:php-fpm', function() {
-//     $stage = input()->hasArgument('stage') ? input()->getArgument('stage') : null;
+task('reload:php-fpm', function() {
+    $stage = input()->hasArgument('stage') ? input()->getArgument('stage') : null;
 
-//     switch ($stage) {
-//         case 'staging':
-//             run('sudo systemctl reload php-fpm');
-//             break;
+    run('echo "Aa@123456" | sudo -S service php7.2-fpm restart -y');
+    // run('echo "Aa@123456" | sudo -S service supervisor start -y');
+    // run('echo "Aa@123456" | sudo -S sudo supervisorctl reload');
 
-//         default:
-//             run('sudo service php7.3-fpm restart -y');
-//     }
-// })->desc('PHP7 FPM reloaded');
+    switch ($stage) {
+        case 'production':
+            run('echo "Deploy Production Environment Successful"');
+            break;
 
-// after('cleanup', 'reload:php-fpm');
+        default:
+            run('echo "Deploy Development Environment Successful"');
+    }
+})->desc('PHP7 FPM reloaded');
+
+after('cleanup', 'reload:php-fpm');
 
