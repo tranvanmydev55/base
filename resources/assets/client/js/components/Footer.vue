@@ -1,41 +1,60 @@
 <template>
-<footer class="cs-footer bg-dark pt-5 pt-md-6 pt-lg-7">
-    <div class="container pt-3 pt-md-0">
-
-        <hr class="hr-light my-5 pb-md-4" />
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-7 pb-md-4 text-center">
-                <h4 class="text-light mb-grid-gutter">Subscribe to Newsletter</h4>
-                <form class="cs-subscribe-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                    <div class="input-group input-group-overlay flex-nowrap">
-                        <div class="input-group-prepend-overlay">
-                            <span class="input-group-text text-muted"><i class="fe-mail"></i></span>
-                        </div>
-                        <input class="form-control prepended-form-control" type="email" name="EMAIL" placeholder="Your email" />
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit" name="subscribe">
-                                Subscribe*
-                            </button>
-                        </div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px" aria-hidden="true">
-                        <input class="cs-subscribe-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1" />
-                    </div>
-                    <small class="form-text text-light opacity-50 pt-2">*Subscribe to our newsletter to receive early discount
-                        offers
-                        and new templates info.</small>
-                    <div class="cs-subscribe-status"></div>
-                </form>
+    <footer class="cs-footer bg-dark pt-5 pt-md-6">
+      <div class="container pt-3 pt-md-0">
+        <div class="row pb-3">
+          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+              <a class="d-block mb-3" href="#" style="width: 153px;">
+              <img src="img/logo/logo-white.png" alt="Around"/>
+              </a>
+            <p class="font-size-sm text-light opacity-60 pb-2 pb-sm-3">Highly customizable and modular official multipurpose Bootstrap template and UI kit.</p><a class="social-btn sb-outline sb-facebook sb-light sb-lg mr-2 mb-2" href="portfolio-single-carousel.html#"><i class="fe-facebook"></i></a><a class="social-btn sb-outline sb-twitter sb-light sb-lg mr-2 mb-2" href="portfolio-single-carousel.html#"><i class="fe-twitter"></i></a><a class="social-btn sb-outline sb-instagram sb-light sb-lg mr-2 mb-2" href="portfolio-single-carousel.html#"><i class="fe-instagram"></i></a><a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="portfolio-single-carousel.html#"><i class="fe-google"></i></a>
+          </div>
+          <div class="col-md-2 col-sm-4 ml-auto pb-1 mb-4">
+            <div class="cs-widget cs-widget-light">
+              <h4 class="cs-widget-title">Company</h4>
+              <ul>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">About</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Careers</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Press</a></li>
+              </ul>
             </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 pb-1 mb-4">
+            <div class="cs-widget cs-widget-light">
+              <h4 class="cs-widget-title">Communities</h4>
+              <ul>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">For artists</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Developers</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Brands</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Investors</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+            <div class="cs-widget cs-widget-light">
+              <h4 class="cs-widget-title">Our news</h4>
+              <ul>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Latest news</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Updates</a></li>
+                <li><a class="cs-widget-link" href="portfolio-single-carousel.html#">Campaigns</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <hr class="hr-light mt-5 pb-4" />
-        <p class="font-size-sm text-center mb-4 py-3">
-            <span class="text-light opacity-50 mr-1">© All rights reserved. Made by</span><a class="nav-link-style nav-link-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx
-                Studio</a>
-        </p>
-    </div>
-</footer>
+        <hr class="border-light">
+        <div class="row align-items-center my-3 pt-4">
+          <div class="col-md-6 order-md-2 text-md-right mb-3">
+            <ul class="list-inline font-size-sm mb-0">
+              <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="portfolio-single-carousel.html#">Support</a></li>
+              <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="portfolio-single-carousel.html#">Contacts</a></li>
+              <li class="list-inline-item"><a class="nav-link-style nav-link-light" href="portfolio-single-carousel.html#">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 order-md-1 mb-3">
+            <p class="font-size-sm mb-0"><span class="text-light opacity-50 mr-1">© All rights reserved. Made by</span><a class="nav-link-style nav-link-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </template>
 
 <script>
