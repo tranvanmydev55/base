@@ -17,7 +17,6 @@
 
 /public/client
 /public/plugins
-/public/fonts
 /public/mix-manifest.json
 /storage/*.key
 /vendor
