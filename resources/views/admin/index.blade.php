@@ -23,6 +23,7 @@
         <script src="{{ mix('admin/js/app.js') }}"></script>
         <script src="/plugins/jquery/jquery.min.js"></script>
         <script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+
         <script>
         $.widget.bridge('uibutton', $.ui.button)
         </script>
