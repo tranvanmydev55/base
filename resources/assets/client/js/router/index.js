@@ -24,34 +24,34 @@ export default [{
         component: Subpage,
         meta: { title: 'Subpage' },
         children: [{
-                path: '/project/:slug',
-                name: 'Project',
-                component: () =>
-                    import ('&/modules/project/views/Detail.vue'),
-            },
-            {
-                path: '/about',
-                name: 'About',
-                component: () =>
-                    import ('&/modules/about/views/About.vue'),
-            },
-            {
-                path: '/contact',
-                name: 'Contact',
-                component: () =>
-                    import ('&/modules/contact/views/Contact.vue'),
-            },
-            {
-                path: '/blog',
-                name: 'Blog',
-                component: () =>
-                    import ('&/modules/blog/views/Blog.vue'),
-            }, {
-                path: '/blog/detail/:slug',
-                name: 'Detail Blog',
-                component: () =>
-                    import ('&/modules/blog/views/Detail.vue'),
-            },
+            path: '/project/:slug',
+            name: 'Project',
+            component: () =>
+                import ('&/modules/project/views/Detail.vue'),
+        },
+        {
+            path: '/about',
+            name: 'About',
+            component: () =>
+                import ('&/modules/about/views/About.vue'),
+        },
+        {
+            path: '/contact',
+            name: 'Contact',
+            component: () =>
+                import ('&/modules/contact/views/Contact.vue'),
+        },
+        {
+            path: '/blog',
+            name: 'Blog',
+            component: () =>
+                import ('&/modules/blog/views/Blog.vue'),
+        }, {
+            path: '/blog/detail/:slug',
+            name: 'Detail Blog',
+            component: () =>
+                import ('&/modules/blog/views/Detail.vue'),
+        },
         ],
     }]
 }];
