@@ -13,8 +13,7 @@
                 </nav>
                 <h1 class="mb-5">Blog</h1>
                 <!-- Post-->
-                <template  v-for="(i, index) in 2">
-                    <article class="card card-horizontal card-hover mb-grid-gutter"><a class="card-img-top" href="blog-single-ns.html" style="background-image: url(img/blog/01.jpg);"></a>
+                    <article v-for="(i, index) in 2" :key="index" class="card card-horizontal card-hover mb-grid-gutter"><a class="card-img-top" href="blog-single-ns.html" style="background-image: url(img/blog/01.jpg);"></a>
                         <div class="card-body"><a class="meta-link font-size-sm mb-2" href="#">Digital design</a>
                             <h2 class="h4 nav-heading mb-4">
                                 <router-link :to="{ name: 'Detail Blog', params: { slug: 'designer-should-always-keep-their'}}">Designers should always keep their users in mind</router-link>
@@ -26,8 +25,7 @@
                             <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-message-square mr-1"></i>&nbsp;6</a><span class="meta-divider"></span><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 19</a></div>
                         </div>
                     </article>
-                </template>
-                
+                    
                 <!-- Pagination-->
                 <div class="d-md-flex justify-content-between align-items-center pt-3 pb-2">
                     <div class="d-flex justify-content-center align-items-center mb-4">
