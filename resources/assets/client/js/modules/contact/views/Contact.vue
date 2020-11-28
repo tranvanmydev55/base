@@ -119,10 +119,14 @@
     </section>
     <!-- Map + Contact form-->
     <section class="border-top" id="map">
-        <div class="row no-gutters cs-gallery"><a class="col-lg-6 cs-gallery-item cs-map-popup d-flex flex-columnt justify-content-center align-items-center bg-position-center bg-size-cover py-7 text-center" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476818218!2d-74.11976253858133!3d40.69740344296443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1568574342685!5m2!1sen!2sua" data-iframe="true" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;396 Lillian Blvd, Holbrook, NY 11741&lt;/h6&gt;" style="background-image:url(img/pages/contacts/map02.jpg);"><span class="cs-gallery-caption"><i class="fe-maximize-2 font-size-xl mt-n1 mr-2"></i>Expand the map</span>
-                <div class="d-inline-block py-4 py-md-6"><img width="48" src="img/pages/contacts/marker.png" alt="Map marker" />
-                </div>
-            </a>
+        <div class="row no-gutters cs-gallery">
+                <a class="col-lg-6 cs-gallery-item cs-map-popup d-flex flex-columnt justify-content-center align-items-center bg-position-center bg-size-cover py-7 text-center" href="https://goo.gl/maps/jGwnxUxHerHXG4iE9" data-iframe="true" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;396 Lillian Blvd, Holbrook, NY 11741&lt;/h6&gt;" style="background-image:url(img/pages/contacts/vmo2.png);">
+                    <span class="cs-gallery-caption">
+                    <i class="fe-maximize-2 font-size-xl mt-n1 mr-2"></i>Expand the map</span>
+                    <div class="d-inline-block py-4 py-md-6">
+                        <img width="48" src="img/pages/contacts/marker.png" alt="Map marker" />
+                    </div>
+                </a>
             <div class="col-lg-6 px-3 px-lg-5">
                 <div class="pt-5 pb-6 pt-md-6 mx-auto" style="max-width: 720px;">
                     <h2 class="h3 pb-4">Drop us a line</h2>
