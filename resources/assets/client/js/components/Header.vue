@@ -21,29 +21,15 @@
                 <!-- Menu-->
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link" href="blog-grid-rs.html">Blog</a>
+                        <router-link class="nav-link" :to="{ name: 'Blog'}">Blog</router-link>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link" href="about.html">About</a>
+                        <router-link class="nav-link" :to="{ name: 'About'}">About</router-link>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="index.html#" data-toggle="dropdown">Contact</a>
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a class="dropdown-item" href="contacts-v1.html">Contacts-v1</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="contacts-v2.html">Contacts-v2</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="contacts-v3.html">Contacts-v3</a>
-                            </li>
-
-                        </ul>
+                        <router-link class="nav-link" :to="{ name: 'Contact'}">Contact</router-link>
                     </li>
-
                 </ul>
             </div>
         </div>
