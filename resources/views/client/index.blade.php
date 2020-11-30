@@ -102,6 +102,7 @@
     
       </script>
     <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
     <script>
         (function(w, d, s, l, i) {
