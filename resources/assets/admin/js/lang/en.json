@@ -24,7 +24,7 @@
         "update_successfully": "Update successfully!",
         "change_password": "Change Password",
         "system": "SYSTEM",
-
+        
         "search": "Search",
         "status": "Status",
         "action": "Action",
@@ -32,7 +32,10 @@
         "created_at": "Created Time",
         "please_choose_type": "Please choose Type",
         "please_choose_status": "Please choose Status",
-        "no_more_data": "No More Data"
+        "no_more_data": "No More Data",
+        "project_management": "Project Management",
+        "save": "Save"
+
     },
     "profile": {
         "title": "Profile",
@@ -128,5 +131,31 @@
         "or": "or",
         "return_to_dashboard": "return to dashboard",
         "back_to_link": "back to link previous"
+    },
+    "project":{
+        "create":"Create",
+        "title_english": "Title English",
+        "title_japan": "Title Japan",
+        "content_english": "Content English",
+        "content_japan" : "Content Japan",
+        "enter_title_english": "Please enter an English title",
+        "enter_title_japanese": "Please enter a Japanese title",
+        "image": "Images",
+        "upload": "Upload",
+        "default": "Default",
+        "drag_images": "Drag images (Multiple)",
+        "or_choose": "(or) choose",
+        "set_as_default": "Set as default",
+        "image_displayed_as_default": "This image will be displayed as default",
+        "drop_your_file_here": "Drop your file here ...",
+        "title_en_required": "English title is required.",
+        "title_jp_required": "Japanese title is required.",
+        "image_required": "Image is required",
+        "content_en_required":"English content is required",
+        "content_jp_required":"Japanese content is required",
+        "title_en_max": "English title cannot exceed",
+        "letter": "letter",
+        "title_jp_max": "Japanese title cannot exceed",
+        "image_max": "Image must not exceed"
     }
 }

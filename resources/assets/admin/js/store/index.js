@@ -8,7 +8,7 @@ import storeLoading from '@/modules/loading/store';
 import storeLang from '@/modules/lang/store';
 import storeAside from '@/components/aside/store';
 import storeAccounts from '@/modules/account/store';
-
+import storeProjects from '@/modules/project/store';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -17,7 +17,8 @@ export default new Vuex.Store({
         storeLoading,
         storeLang,
         storeAside,
-        storeAccounts
+        storeAccounts,
+        storeProjects
     },
     plugins: [createPersistedState({
         key: 'admin',
