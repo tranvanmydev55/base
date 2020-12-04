@@ -24,6 +24,15 @@
                         </p>
                     </router-link>
                 </li>
+
+                <li class="nav-item">
+                    <router-link to="/projects" :class="{'active': activeAside == 'projects'}" class="nav-link">
+                        <i class="nav-icon fab fa-slack"></i>
+                        <p>
+                            {{ $t('common.project_management') }}
+                        </p>
+                    </router-link>
+                </li>
                 <li class="nav-header">{{ $t('common.system') }}</li>
                 <li class="nav-item">
                     <router-link to="/" class="nav-link">

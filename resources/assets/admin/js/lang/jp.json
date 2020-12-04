@@ -32,7 +32,10 @@
         "created_at": "作成時間",
         "please_choose_type": "タイプを選択してください",
         "please_choose_status": "ステータスを選択してください",
-        "no_more_data": "これ以上のデータはありません"
+        "no_more_data": "これ以上のデータはありません",
+        "project_management": "プロジェクト管理",
+        "save": "セーブ"
+
     },
     "profile": {
         "title": "題名",
@@ -129,5 +132,32 @@
         "or": "または",
         "return_to_dashboard": "ダッシュボードに戻る",
         "back_to_link": "前のリンクに戻る"
+    },
+    "project": {
+        "create": "作成する",
+        "title_english": "タイトル英語",
+        "title_japan": "タイトル日本",
+        "content_english": "コンテンツ英語",
+        "content_japan" : "コンテンツジャパン",
+        "enter_title_english": "英語のタイトルを入力してください",
+        "enter_title_japanese": "日本語のタイトルを入力してくださ",
+        "image": "画像",
+        "upload": "アップロード",
+        "default": "デフォルト",
+        "drag_images": "画像をドラッグする（多く）",
+        "or_choose": "（または）選択",
+        "set_as_default": "デフォルトとして設定",
+        "image_displayed_as_default": "この画像はデフォルトで表示されます",
+        "drop_your_file_here": "ここにファイルをドロップします...",
+        "title_en_required": "英語のタイトルが必要です。",
+        "title_jp_required": "日本語のタイトルが必要です。",
+        "image_required": "画像が必要です",
+        "content_en_required": "英語のコンテンツが必要",
+        "content_jp_required": "必要な英語のコンテンツ",
+        "title_en_max": "英語のタイトルは超えてはいけません",
+        "letter": "文字",
+        "title_jp_max": "日本語のタイトルは超えてはいけません",
+        "image_max": "画像は超えてはなりません"
+
     }
 }

@@ -9,9 +9,13 @@ import store from './store';
 
 import 'viewerjs/dist/viewer.css';
 import Viewer from 'v-viewer';
+import VueLazyload from 'vue-lazyload';
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
+
+Vue.use(VueLazyload);
 
 require('./library/boostrap');
-
 Vue.use(Router);
 Vue.use(Toasted);
 Vue.use(Viewer);

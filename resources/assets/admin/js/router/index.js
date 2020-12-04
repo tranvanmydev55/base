@@ -46,6 +46,29 @@ export default [{
         ],
     },
     {
+        path: 'projects',
+        name: 'Projects',
+        redirect: 'projects',
+        meta: { title: 'Projects', requiresAuth: true, accessedBy: ['admin'] },
+        component: {
+            render(c) {
+                return c('router-view');
+            },
+        },
+        children: [{
+            path: '',
+            component: () =>
+                import ('@/modules/project/views/List.vue'),
+        },
+        {
+            path: 'create',
+            name: 'Create',
+            component: () =>
+                import ('@/modules/project/views/Create.vue'),
+        },
+        ],
+    },
+    {
         path: '*',
         name: 'Error Page',
         component: () =>
