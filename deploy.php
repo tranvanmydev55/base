@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'backend-tsure');
 
 // Project repository
-set('repository', 'git@bitbucket.org:tsuru-vmojp/backend.git');
+set('repository', 'git@bitbucket.org:fsc-vmojp/backend.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', false);

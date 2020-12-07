@@ -1,156 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8" />
-    <title>My-Tsuru</title>
-    <base href="/" />
-    <meta name="description" content="Around - Multipurpose Bootstrap Template" />
-    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative"
-    />
-    <meta name="author" content="Createx Studio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/duck.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/duck.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/duck.png" />
-    {{-- <link rel="manifest" href="https://demo.createx.studio/around/site.webmanifest" /> --}}
-    {{-- <link rel="mask-icon" color="#5bbad5" href="https://demo.createx.studio/around/safari-pinned-tab.svg" /> --}}
-    <meta name="msapplication-TileColor" content="#766df4" />
-    <meta name="theme-color" content="#ffffff" />
-    <style>
-        .cs-page-loading {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-transition: all 0.4s 0.2s ease-in-out;
-            transition: all 0.4s 0.2s ease-in-out;
-            background-color: #fff;
-            opacity: 0;
-            visibility: hidden;
-            z-index: 9999;
-        }
-        .cs-page-loading.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        .cs-page-loading-inner {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
-            opacity: 0;
-        }
-        .cs-page-loading.active>.cs-page-loading-inner {
-            opacity: 1;
-        }
-        
-        .cs-page-loading-inner>span {
-            display: block;
-            font-family: "Inter", sans-serif;
-            font-size: 1rem;
-            font-weight: normal;
-            color: #737491;
-        }
-        
-        .cs-page-spinner {
-            display: inline-block;
-            width: 2.75rem;
-            height: 2.75rem;
-            margin-bottom: 0.75rem;
-            vertical-align: text-bottom;
-            border: 0.15em solid #766df4;
-            border-right-color: transparent;
-            border-radius: 50%;
-            -webkit-animation: spinner 0.75s linear infinite;
-            animation: spinner 0.75s linear infinite;
-        }
-        
-        @-webkit-keyframes spinner {
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-        
-        @keyframes spinner {
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-      <script>
-        (function () {
-          window.onload = function () {
-            var preloader = document.querySelector('.cs-page-loading');
-            preloader.classList.remove('active');
-            setTimeout(function () {
-              preloader.remove();
-            }, 2000);
-          };
-        })();
-    
-      </script>
-    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
-    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
-    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js"
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-WKV3GT5");
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FSC Tool</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="/client/dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="/client/dist/images/logo.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">FSC TOOL - VMO</h1>
+	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <div class="hero-cta"><a class="button button-primary" href="{{ env('APP_CMS') }}/login">Sign In</a></div>
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
 
-<body>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5fbfb925a1d54c18d8edb39f/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-05.svg" alt="Feature 05">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="/client/dist/images/feature-icon-06.svg" alt="Feature 06">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <div class="cs-page-loading active">
-        <div class="cs-page-loading-inner">
-          <div class="cs-page-spinner"></div><span>Loading...</span>
-        </div>
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Unlimited for all</h2>
+                            <p class="section-paragraph mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ad quis nostrud.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner">
+						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
+						<div class="cta-cta">
+							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+						<a href="#">
+							<img class="header-logo-image" src="/client/dist/images/logo.svg" alt="Logo">
+						</a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0270D7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0270D7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Google</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2021 VMOJP, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div id="app-client"></div>
-    <script src="{{ mix('client/js/app.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
-    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
-    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="js/theme.min.js"></script>
+    <script src="/client/dist/js/main.min.js"></script>
 </body>
-
 </html>

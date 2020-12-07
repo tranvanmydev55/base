@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import Home from '@/components/Home.vue';
 import Login from '@/components/authentication/views/Login.vue';
 import ForgotPassword from '@/components/authentication/views/ForgotPassword.vue';
@@ -19,7 +20,7 @@ export default [{
     children: [{
         path: '/',
         component: () =>
-            import ('@/modules/dashboard/views/Dashboard.vue'),
+            import('@/modules/dashboard/views/Dashboard.vue'),
         name: 'Dashboard',
         meta: { title: 'dashboard', requiresAuth: true, accessedBy: ['admin'] },
     }, {
@@ -35,13 +36,13 @@ export default [{
         children: [{
             path: '',
             component: () =>
-                import ('@/modules/account/views/List.vue'),
+                import('@/modules/account/views/List.vue'),
         },
         {
             path: 'profile/:id',
             name: 'Profile',
             component: () =>
-                import ('@/modules/account/views/Profile.vue'),
+                import('@/modules/account/views/Profile.vue'),
         },
         ],
     },
@@ -58,13 +59,13 @@ export default [{
         children: [{
             path: '',
             component: () =>
-                import ('@/modules/project/views/List.vue'),
+                import('@/modules/project/views/List.vue'),
         },
         {
             path: 'create',
             name: 'Create',
             component: () =>
-                import ('@/modules/project/views/Create.vue'),
+                import('@/modules/project/views/Create.vue'),
         },
         ],
     },
@@ -72,7 +73,7 @@ export default [{
         path: '*',
         name: 'Error Page',
         component: () =>
-            import ('@/modules/error/views/NotFound.vue')
+            import('@/modules/error/views/NotFound.vue')
     },
     ]
 }];
