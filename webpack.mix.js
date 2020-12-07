@@ -23,15 +23,17 @@ mix.webpackConfig({
     },
 });
 
-mix.sass('resources/assets/admin/sass/app.scss', 'public/admin/css');
-mix.copyDirectory('resources/assets/admin/image', 'public/admin/image');
+// mix.sass('resources/assets/admin/sass/app.scss', 'public/admin/css');
 
 mix.js('resources/assets/admin/js/app.js', 'public/admin/js')
     .copyDirectory('node_modules/admin-lte/dist/', 'public/dist/')
-    .copyDirectory('node_modules/admin-lte/plugins/', 'public/plugins/');
+    .copyDirectory('node_modules/admin-lte/plugins/', 'public/plugins/')
+    .copyDirectory('resources/assets/admin/image', 'public/admin/image')
+    .sass('resources/assets/admin/sass/app.scss', 'public/admin/css');
 
-mix.js('resources/assets/client/js/app.js', 'public/client/js')
+mix.js('resources/assets/client/js/app.js', 'public/client/js');
 
 
 mix.version();
+// mix.extract(['vue']);
 mix.disableNotifications();

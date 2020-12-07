@@ -1,8 +1,12 @@
 <template>
 <div class="wrapper">
-    <div class="splash-screen" v-show="mainLoading.show">
-        <div class="splash-overlay" v-show="mainLoading.show"></div>
-        <div class="splash-spinner"></div>
+    <div class="vld-parent">
+        <loading :active.sync="mainLoading.show"
+        :can-cancel="true"
+        :loader="'bars'"
+        :color="'#766df4'"
+        :opacity="0.3"
+        :is-full-page="fullPage"></loading>
     </div>
     <app-navbar></app-navbar>
     <app-aside></app-aside>
@@ -28,6 +32,8 @@ import AppBreadcrumd from '@/components/Breadcrumb';
 import AppFooter from '@/components/Footer';
 import ProfileModal from '@/components/authentication/views/ProfileModal';
 import ChangePassword from '@/components/authentication/views/ChangePassword';
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
 
 import {
     mapState
@@ -41,7 +47,8 @@ export default {
         AppBreadcrumd,
         AppFooter,
         ProfileModal,
-        ChangePassword
+        ChangePassword,
+        Loading
     },
     computed: {
         ...mapState({
@@ -52,6 +59,14 @@ export default {
             return this.$route.matched;
         },
     },
+
+    data() {
+        return {
+            isLoading: false,
+            fullPage: true
+        };
+    },
+
 
     /**
      * Created with component

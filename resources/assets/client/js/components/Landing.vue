@@ -1,5 +1,13 @@
 <template>
 <div>
+     <div class="vld-parent">
+        <loading :active.sync="isLoading"
+        :can-cancel="true"
+        :loader="'dots'"
+        :color="'#766df4'"
+        :is-full-page="fullPage"></loading>
+    </div>
+
     <main class="cs-page-wrapper">
         <header-1></header-1>
         <intro></intro>
@@ -23,6 +31,13 @@ import Mobile from '&/components/Mobile';
 import Feature from '&/components/Feature';
 import Footer1 from '&/components/Footer';
 
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
+
+import {
+    mapState
+} from 'vuex';
+
 export default {
     name: 'Landing',
     components: {
@@ -33,8 +48,17 @@ export default {
         Inner,
         Mobile,
         Feature,
-        Footer1
+        Footer1,
+        Loading
     },
+
+    data() {
+        return {
+            isLoading: false,
+            fullPage: true
+        }
+    },
+
     computed: {
         listRoute() {
             return this.$route.matched;
@@ -43,15 +67,24 @@ export default {
         currenHome() {
             return this.$options.name;
         },
+
+        ...mapState({
+            mainLoading: state => state.storeLoading.mainLoading
+        }),
     },
 
     /**
      * Created with component
      */
     created() {
-        /**
-         * Do something
-         */
+        this.isLoading = true;
+        setTimeout(() => {
+            this.isLoading = false
+        }, 2000)
+    },
+
+    methods: {
+
     }
 };
 </script>

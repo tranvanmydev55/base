@@ -14,8 +14,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/duck.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/duck.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/duck.png" />
-    {{-- <link rel="manifest" href="https://demo.createx.studio/around/site.webmanifest" /> --}}
-    {{-- <link rel="mask-icon" color="#5bbad5" href="https://demo.createx.studio/around/safari-pinned-tab.svg" /> --}}
     <meta name="msapplication-TileColor" content="#766df4" />
     <meta name="theme-color" content="#ffffff" />
     <style>
@@ -53,7 +51,6 @@
         .cs-page-loading.active>.cs-page-loading-inner {
             opacity: 1;
         }
-        
         .cs-page-loading-inner>span {
             display: block;
             font-family: "Inter", sans-serif;
@@ -61,7 +58,6 @@
             font-weight: normal;
             color: #737491;
         }
-        
         .cs-page-spinner {
             display: inline-block;
             width: 2.75rem;
@@ -74,14 +70,12 @@
             -webkit-animation: spinner 0.75s linear infinite;
             animation: spinner 0.75s linear infinite;
         }
-        
         @-webkit-keyframes spinner {
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
             }
         }
-        
         @keyframes spinner {
             100% {
                 -webkit-transform: rotate(360deg);
@@ -89,40 +83,12 @@
             }
         }
     </style>
-      <script>
-        (function () {
-          window.onload = function () {
-            var preloader = document.querySelector('.cs-page-loading');
-            preloader.classList.remove('active');
-            setTimeout(function () {
-              preloader.remove();
-            }, 2000);
-          };
-        })();
-    
-      </script>
     <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
     <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js"
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-WKV3GT5");
-    </script>
 </head>
 
 <body>
-    <!--Start of Tawk.to Script-->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -134,15 +100,9 @@
         s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
-    <!--End of Tawk.to Script-->
-
-    <div class="cs-page-loading active">
-        <div class="cs-page-loading-inner">
-          <div class="cs-page-spinner"></div><span>Loading...</span>
-        </div>
-    </div>
     <div id="app-client"></div>
     <script src="{{ mix('client/js/app.js') }}"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
